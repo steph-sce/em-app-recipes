@@ -1,12 +1,10 @@
 <div class="row wrapper content">
   <div class="col s7">
-    <ul class="collection">
-      <li class="collection-item avatar">
-        <img src="images/yuna.jpg" alt="" class="circle">
-        <span class="title">API</span>
-        <p>First Line <br> Second Line
-        </p>
-        <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+    <ul class="collection z-depth-5">
+      <li class="collection-item avatar" *ngFor="let recipe of recipes">
+        <img src="{{recipe.thumbnailUrl}}" alt="" class="circle">
+        <p class="title">{{ recipe.title }}</p>
+        <p>{{recipe.stars}}</p>
       </li>
     </ul>
   </div>
