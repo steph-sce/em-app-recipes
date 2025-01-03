@@ -1,16 +1,21 @@
 <div class="container">
-  <!-- Page Content goes here-->
   <div class="row header-nav">
     <div class="col s12">
       <nav>
         <h1 class="header">
-          <a class="brand-logo home-title">{{title}}</a>
+          <a class="brand-logo home-title">{{ title }}</a>
         </h1>
       </nav>
-      <h2>{{subtitle}}</h2>
+    </div>
+    <!-- .header-nav -->
+    <div class="row wrapper content">
+      <div class="col s12">
+
+        <!-- Appel du composant contenant les recettes (la liste de gauche + le détail du composant qui sera cliqué) -->
+        <app-recipes></app-recipes>
+
+      </div>
+      <!-- .content -->
     </div>
   </div>
-  <!-- .header-nav -->
-  <app-recipes></app-recipes>
-  <!-- .content -->
 </div>
